@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Zooming from "./components/Zooming";
+import Connected from "./components/Connected";
+import TestCollision1 from "./components/TestCollision1";
+import NonRelativeZoom from "./components/NonRelativeZoom";
+import StarCollision from "./components/StartCollision";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Zooming/>
+      <TestCollision1/>
+      <StarCollision/>
+      <NonRelativeZoom/>
+      <Connected />
     </div>
   );
-}
+};
 
 export default App;
